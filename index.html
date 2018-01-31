@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -9,9 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
     <title>Pixie</title>
-    <link rel="icon" 
-    type="image/png" 
-    href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/animate.css" rel="stylesheet" />
@@ -25,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:500i" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -32,22 +32,33 @@
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                        <div class "row" id = "ani"> 
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class "row" id="ani">
                             <a class="pull-left" href="#">
-                                <img src="assets/img/logo.png" class = "text animated slideInDown" id = "log"  alt=" LOGO "></a>
-                            </div>
+                                <img src="assets/img/logo.png" class="text animated slideInDown" id="log" alt=" LOGO ">
+                            </a>
+                        </div>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="aboutus.html">ABOUT US</a></li>
-                            <li><a href="portfolio.html">PORTFOLIO</a></li>
-                            <li><a href="gallery.html">GALLERY</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">GALLERY</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">CONTACT</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -56,63 +67,82 @@
         </nav>
     </div>
     <!--/.NAVBAR END-->
-        <div class="container">
-            <section id="home" class="text-center">
+    <div class="container">
+        <section id="home" class="text-center">
 
-                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
 
-                    <div class="carousel-inner" id = "vid">
-                            <video width="1010"controls autoplay controlsList="nodownload" >
-                                    <source src="assets/pixie.mp4" type="video/mp4">
-                                    <source src="movie.ogg" type="video/ogg"> Your browser does not support the video tag.
-                                </video>
-                    </div>
+                <div class="carousel-inner" id="vid">
+                    <video width="1010" controls autoplay controlsList="nodownload">
+                        <source src="assets/pixie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg"> Your browser does not support the video tag.
+                    </video>
                 </div>
-            </section>
-        </div>
-        <div class="sticky-container">
-            <ul class="sticky">
-                <li>
-                    <img src="assets/img/facebook-circle.png" width="32" height="32">
-                    <p><a href="https://www.facebook.com/" target="_blank">Like Us on<br>Facebook</a></p>
-                </li>
-                <li>
-                    <img src="assets/img/instagram-circle.png" width="32" height="32">
-                    <p><a href="https://instagram.com/" target="_blank">Follow Us on<br>Instagram</a></p>
-                </li>
-                <li>
-                    <img src="assets/img/twitter-circle.png" width="32" height="32">
-                    <p><a href="https://twitter.com/" target="_blank">Follow Us on<br>Twitter+</a></p>
-                </li>
-                <li>
-                    <img src="assets/img/youtube-circle.png" width="32" height="32">
-                    <p><a href="http://www.youtube.com/" target="_blank">Subscribe on<br>YouYube</a></p>
-                </li>
-                <li>
-                    
-                    <img src="assets/img/linkedin-circle.png" width="32" height="32">
-                    <p><a href="https://www.linkedin.com/company/" target="_blank">Follow Us on<br>LinkedIn</a></p>
-                </li>
-                <li>
-                    <img src="assets/img/pin-circle.png" width="32" height="32">
-                    <p><a href="https://www.pinterest.com/" target="_blank">Follow Us on<br>Pinterest</a></p>
-                </li>
-            </ul>
-        </div>
-        <!--/.FOOTER END-->
-        <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-        <!-- CORE JQUERY  -->
-      <!--0  <script src="assets/plugins/jquery-1.10.2.js"></script>-->
-        <!-- BOOTSTRAP SCRIPTS  -->
-        <script src="assets/plugins/bootstrap.js"></script>
-        <!-- CUSTOM SCRIPTS  -->
-        <script src="assets/js/custom.js"></script>
-        <script>
+            </div>
+        </section>
+    </div>
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <img src="assets/img/facebook-circle.png" width="32" height="32">
+                <p>
+                    <a href="https://www.facebook.com/" target="_blank">Like Us on
+                        <br>Facebook</a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/img/instagram-circle.png" width="32" height="32">
+                <p>
+                    <a href="https://instagram.com/" target="_blank">Follow Us on
+                        <br>Instagram</a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/img/twitter-circle.png" width="32" height="32">
+                <p>
+                    <a href="https://twitter.com/" target="_blank">Follow Us on
+                        <br>Twitter+</a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/img/youtube-circle.png" width="32" height="32">
+                <p>
+                    <a href="http://www.youtube.com/" target="_blank">Subscribe on
+                        <br>YouYube</a>
+                </p>
+            </li>
+            <li>
 
-$(document).ready(function () {
-    $('#log').hide().fadeIn(3000);
-    $('#vid').hide().fadeIn(1500);
-    });
-        </script>
+                <img src="assets/img/linkedin-circle.png" width="32" height="32">
+                <p>
+                    <a href="https://www.linkedin.com/company/" target="_blank">Follow Us on
+                        <br>LinkedIn</a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/img/pin-circle.png" width="32" height="32">
+                <p>
+                    <a href="https://www.pinterest.com/" target="_blank">Follow Us on
+                        <br>Pinterest</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!--/.FOOTER END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <!--0  <script src="assets/plugins/jquery-1.10.2.js"></script>-->
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/plugins/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#log').hide().fadeIn(3000);
+            $('#vid').hide().fadeIn(1500);
+        });
+    </script>
 </body>
+
 </html>
