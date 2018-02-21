@@ -18,11 +18,68 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:500i" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/gallery-grid.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
+<style>
+    .gallery-title {
+        font-size: 36px;
+        color: #42B32F;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 70px;
+    }
+
+    .gallery-title:after {
+        content: "";
+        position: absolute;
+        width: 7.5%;
+        left: 46.5%;
+        height: 45px;
+        border-bottom: 1px solid #5e5e5e;
+    }
+
+    .filter-button {
+        font-size: 18px;
+        border: 1px solid rgb(166, 223, 183);
+        border-radius: 5px;
+        text-align: center;
+        color: rgb(69, 71, 68);
+        margin-bottom: 30px;
+        box-shadow: 5px 10px 18px #888888;
+        margin: 8px 8px;
+
+    }
+
+    .filter-button:hover {
+        font-size: 18px;
+        border: 1px solid rgb(110, 126, 115);
+        border-radius: 2px;
+        text-align: center;
+        color: #ffffff;
+        background-color: rgb(185, 151, 240);
+
+    }
+
+    .btn-default:active .filter-button:active {
+        background-color: rgb(223, 223, 223);
+        color: white;
+    }
+
+    .port-image {
+        width: 100%;
+    }
+
+    .gallery_product {
+        margin-bottom: 30px;
+    }
+    .event{
+        margin-top: 1.8em;
+    }
+    .filter-button:active{
+        background-color: rgb(54, 45, 58);
+    }
+    
+</style>
 
 <body>
     <div class="container">
@@ -50,7 +107,10 @@
                                 <a href="aboutus.html">ABOUT US</a>
                             </li>
                             <li>
-                                <a href="portfolio.html">PORTFOLIO</a>
+                                <a href="services.html">SERVICES</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">CLIENTS</a>
                             </li>
                             <li>
                                 <a href="pricing.html">GALLERY</a>
@@ -64,73 +124,75 @@
                 </div>
             </div>
         </nav>
-    </div>
+
     <!--/.NAVBAR END-->
 
-    <div class="container ">
-        <!--gallery-container-->
+ 
+        <div class="row">
+            
+
+            <div align="center" class="event">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="event1">Event 1</button>
+                <button class="btn btn-default filter-button" data-filter="event2">Event 2</button>
+                <button class="btn btn-default filter-button" data-filter="event3">Event 3</button>
+                <button class="btn btn-default filter-button" data-filter="event4">Event 4</button>
+            </div>
+            <br/>
 
 
 
-
-        <div class="tz-gallery">
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/park.jpg">
-                        <img src="assets/img/gallery/park.jpg" alt="Park">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/bridge.jpg">
-                        <img src="assets/img/gallery/bridge.jpg" alt="Bridge">
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/tunnel.jpg">
-                        <img src="assets/img/gallery/tunnel.jpg" alt="Tunnel">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/coast.jpg">
-                        <img src="assets/img/gallery/coast.jpg" alt="Coast">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/rails.jpg">
-                        <img src="assets/img/gallery/rails.jpg" alt="Rails">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/traffic.jpg">
-                        <img src="assets/img/gallery/traffic.jpg" alt="Traffic">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/rocks.jpg">
-                        <img src="assets/img/gallery/rocks.jpg" alt="Rocks">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/benches.jpg">
-                        <img src="assets/img/gallery/benches.jpg" alt="Benches">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="assets/img/gallery/sky.jpg">
-                        <img src="assets/img/gallery/sky.jpg" alt="Sky">
-                    </a>
-                </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event1">
+                <img src="assets/img/gallery/benches.jpg" class="img-responsive">
             </div>
 
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event1">
+                <img src="assets/img/gallery/bridge.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event1">
+                <img src="assets/img/gallery/coast.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event1">
+                <img src="assets/img/gallery/park.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event1">
+                <img src="assets/img/gallery/rails.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event2">
+                <img src="assets/img/gallery/rocks.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event2">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event3">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event4">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event4">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter evebt3">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event4">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
         </div>
-
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
+    </section>
+</div>
 
     <!--/.FOOTER END-->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
@@ -138,8 +200,33 @@
     <script src="assets/plugins/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS  -->
     <script src="assets/plugins/bootstrap.js"></script>
-    <!-- CUSTOM SCRIPTS  -->
-    <script src="assets/js/custom.js"></script>
+    <!-- CUSTOM SCRIPTS 
+    <script src="assets/js/custom.js"></script> -->
 </body>
+<script>
+    $(document).ready(function () {
+
+        $(".filter-button").click(function () {
+            var value = $(this).attr('data-filter');
+            if (value == "all") {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else {
+                //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.' + value).hide('3000');
+                $('.filter').filter('.' + value).show('3000');
+
+            }
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+    });
+</script>
 
 </html>
